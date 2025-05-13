@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-primary);
+    position:relative;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/* CSS CUSTOM DEFAULT */
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.g-1{
+    gap: 1rem;
+}
+.flex-full{
+    flex: 1;
+}
+.weight-500{
+    font-weight: 500;
+}
+.btn{
+    padding: 10px 1rem;
+    width: 100;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-blue{
+    margin-top: 1rem;
+    background: var(--tertiary);
+    color: var(--text-secondary);
+    text-align: center;
+    transition: box-shadow 300ms ease;
+}
+.btn-blue:hover{
+    box-shadow: var(--btn-shadow-blue);
+}

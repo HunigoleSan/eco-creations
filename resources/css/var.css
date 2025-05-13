@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary: #39A92A;
+    --secondary: #ffffff;
+    --tertiary: #3b89ff;
+    
+    /* VARIANT */
+
+    --bg-sage-green: #6AA16D;
+    --bg-green: #318235;
+    --bg-dark-blue: #1B1F27;
+
+    --bg-light-grey: rgb(233, 233, 233);
+
+    /* BACKGROUND TRANSPARENCY */
+    --bg-white-60: rgb(255, 255, 255,60%);
+    --bg-white-0: rgb(255, 255, 255,0%);
+
+    /* TEXT COLOR */
+
+    --text-primary: #1B1F27;
+    --text-secondary: #ffffff;
+    --text-grey: #81858D;
+    --text-sage-green: #6AA16D;
+
+
+    /* BORDER COLOR */
+
+    --border-color-light-green: #E9EFEA;
+    --font-primary: "Poppins", system-ui, sans-serif;
+    
+
+    /* FONT SIZE */
+
+    --fsize-logo: clamp(20px, 3vw, 25px);
+    --fsize-nav: 15px;
+    --fsize-sub-nav: 15px;
+    --fsize-paragraph: 14px;
+    --fsize-price-card-product: 21px;
+    --fsize-cart-product: 13px;
+    
+    --fsize-cart-title: 20px;
+    --fsize-cart-subtitle: 16px;
+    /* SHADOWS ELEMENTS */
+
+    --element-dropdown: 0px 10px 24px -10px rgba(14,38,16,15%);
+    --btn-shadow-blue: 0px 20px 25px -10px rgb(59, 137, 255);
+    
+    
+}
