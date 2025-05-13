@@ -1,0 +1,155 @@
+/* General Styles */
+.contact-page {
+    display: flex;
+    height: calc(100vh - 6rem);
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Form Styles */
+.contact-page__form {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    background-color: #FFFFFF;
+}
+
+.contact-page__form-element {
+    background-color: #FFFFFF;
+    max-width: 45em;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 25px rgba(17, 49, 19, 0.07);
+    transform: translateX(100px);
+    z-index: 3;
+}
+
+.contact-page__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.contact-page__description {
+    font-size: 16px;
+    color: #3B89FF;
+    text-align: center;
+}
+
+.contact-page__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-page__label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.contact-page__input {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #B7C0CD;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact-page__input:focus {
+    border-color: #3B89FF;
+    box-shadow: 0 0 5px rgba(59, 137, 255, 0.25);
+}
+
+.contact-page__required {
+    color: red;
+    font-weight: 600;
+}
+
+.contact-page__submit {
+    padding: 10px 30px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #3B89FF;
+    border: 1px solid #3B89FF;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+    width: 100%;
+}
+
+.contact-page__submit:hover {
+    background-color: transparent;
+    color: #3B89FF;
+    box-shadow: 0 8px 10px rgba(59, 137, 255, 0.25);
+}
+
+/* Services Section */
+.contact-page__services {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+.contact-page__services-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-page__services-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.contact-page__service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.contact-page__service-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.contact-page__service-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.contact-page__service-description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #A5ABB3;
+}

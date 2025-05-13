@@ -133,7 +133,7 @@
     top: 82px;
     z-index: -1;
     right: 450px;
-    transform: translateX(600px);
+    transform: translateX(800px);
     text-align: center;
     transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
     color: var(--text-secondary);
@@ -239,7 +239,6 @@
     color: var(--text-primary); 
     align-items: center;
     gap: 10px;
-    cursor: pointer;
 }
 
 .product-data {
@@ -253,6 +252,8 @@
     aspect-ratio: 1 / 1;
     width: max-content;
     object-fit: contain;
+    cursor: pointer;
+
 }
 
 .product-description {

@@ -35,7 +35,7 @@ function showCart() {
 }
 
 function showProduct() {
-    let $cards = document.querySelectorAll('.card')
+    let $cards = document.querySelectorAll('.product-img')
     $cards.forEach(card => {
         card.addEventListener('click', () => {
             window.location.href = `detalle-producto.html?id=${card.id}`
