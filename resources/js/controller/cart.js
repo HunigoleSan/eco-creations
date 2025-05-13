@@ -47,8 +47,8 @@ function totalCart(){
     if(!$subtotal){
         return
     }
-    $subtotal.textContent = `S/ ${total}`
-    $total.textContent = `S/ ${total}`
+    $subtotal.textContent = `S/ ${total.toFixed(2)}`
+    $total.textContent = `S/ ${total.toFixed(2)}`
     $count_product.textContent = amount
 }
 
@@ -60,7 +60,7 @@ function processPurchase(){
     process.addEventListener('click',()=>{
         if(cart.length > 0){
             localStorage.setItem('cart',JSON.stringify(cart))
-            window.location.href= 'checkout.html'
+            window.location.href= '../checkout.html'
         
         }else{
             console.log("error")
