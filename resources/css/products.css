@@ -321,6 +321,7 @@
     max-height: 322px;
     aspect-ratio: 1 / 1;
     width: max-content;
+    object-fit: contain;
 }
 
 .product-description {
