@@ -2,7 +2,7 @@ export function productCompoent(product){
     
     const {title,price,image,id,description} = product
     let component = `
-        <article class="card">
+        <article id='${id}' class="card">
             <img class="product-img" src="${image}" alt="${title}">
             <div class="product-data">
                 <p class="product-title">${title}</p>

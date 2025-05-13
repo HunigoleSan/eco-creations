@@ -1,73 +1,4 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1920px;
-    width: 100%;
-    padding: 0px 80px;
-    background: var(--secondary);
-    position: relative;
-    overflow: hidden;
-}
 
-.header::after {
-    content: '';
-    width: 100vw;
-    height: 1px;
-    background: var(--border-color-light-green);
-    left: 0;
-    bottom: 0;
-    position: absolute;
-
-}
-
-.logo {
-    display: flex;
-    gap: 20px;
-    color: var(--text-sage-green);
-    align-items: center;
-}
-
-.logo-name {
-    color: inherit;
-    font-size: var(--fsize-logo);
-}
-
-.logo-icon-path {
-    color: inherit;
-    fill: currentColor;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.list {
-    display: flex;
-    gap: 30px;
-    color: var(--text-primary);
-    font-size: var(--fsize-nav);
-}
-
-.list-item {
-    color: inherit;
-    display: flex;
-    align-items: center;
-
-}
-.count-product{
-    padding-left: 5px;
-    font-weight: 500;
-}
-
-.cart-link{
-    cursor: pointer;
-}
-
-.link {
-    color: inherit;
-    line-height: 82px;
-}
 
 /* CSS CARRITO DE COMPRAS */
 .containerCart{
@@ -202,7 +133,7 @@
     top: 82px;
     z-index: -1;
     right: 450px;
-    transform: translateX(500px);
+    transform: translateX(600px);
     text-align: center;
     transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
     color: var(--text-secondary);
@@ -308,7 +239,7 @@
     color: var(--text-primary); 
     align-items: center;
     gap: 10px;
-
+    cursor: pointer;
 }
 
 .product-data {
@@ -369,7 +300,7 @@
 }
 @keyframes toastAnimationCart {
     0%{
-        transform: translateX(480px);
+        transform: translateX(600px);
         
     }
     20%{
@@ -379,6 +310,6 @@
         transform: translateX(0px);
     }
     to{
-        transform: translateX(450px);
+        transform: translateX(600px);
     }
 }

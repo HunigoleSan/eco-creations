@@ -1,6 +1,7 @@
 const API = 'https://fakestoreapi.com';
 const ALL_PRODUCTS = `${API}/products`;
 
+let products_list = ""
 
 async function getProducts(){
     try {
@@ -9,13 +10,14 @@ async function getProducts(){
         if(!res.ok){
             throw new Error(`Error: ${res.ok}: No se pudo obtener los productos`)
         }
-        return products;
+        products_list = products
+
+        return products_list;
     } catch (error) {
         console.error('La petición fallo:', error.message)
         return [];
     }
 }
-
 async function findProducts(id){
     const FIND_PRODUCT = `${ALL_PRODUCTS}/${id}`;
 
@@ -34,4 +36,4 @@ async function findProducts(id){
 
 }
 
-export {getProducts, findProducts};
+export {getProducts, findProducts, products_list};
