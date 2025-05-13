@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    background-image: url('../img/nosotros/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+main h1 {
+    display: flex;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-p-mision-vision {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.c-mision {
+    width: 100%;
+    padding-inline: 5rem;
+}
+
+.c-mision p {
+    font-weight: 300;
+}
+
+.c-vision {
+    width: 100%;
+    padding-inline: 5rem;
+}
+
+.c-vision p{
+    font-weight: 300;
+}
+.c-titulo-img {
+    text-align: center;
+}
+
+.c-titulo-img h1 {
+    font-size: 40px;
+}
+
+.c-p-valores{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.c-p-valores section>img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.c-p-valores section{
+    width: 100%;
+}

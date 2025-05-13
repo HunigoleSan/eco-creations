@@ -1,7 +1,7 @@
 export function productDetailComponent(product){
     let $containerProduct = document.querySelector('.containerProduct')
 
-    let{ title, description, rating: {rate,count}, category, image} = product
+    let{ title, description, rating: {rate,count}, category, image, price} = product
     let component = `
         <section class="containerDetailProduct">
             <div class="product-images">
@@ -24,7 +24,7 @@ export function productDetailComponent(product){
                     <div class="cube cube-blue"></div>
                     <div class="cube cube-orange"></div>
                 </div>
-                <p class="price">S/ 109.95</p>
+                <p class="price">S/ ${price}</p>
                 <div class="d-flex g-1">
                     <p class="amount"> Cantidad: ${count} </p>
                     <p class="rate">Valoración: ${rate}</p>
